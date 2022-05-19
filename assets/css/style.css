@@ -1,0 +1,414 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-family: sans-serif, serif, "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti;
+    letter-spacing: .05rem;
+    line-height: 1.5;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    flex: 0 0 auto;
+    box-shadow: #aaaaaa 1px 0px 3px;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+    width: 100%;
+    background-color: #415588;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: small;
+}
+
+footer p {
+    margin-bottom: 0%;
+    color: #fff;
+}
+
+/* 初始設定 end */
+.material-icons, .material-icons-outlined, .material-icons-round, .material-icons-sharp, .material-icons-two-tone {
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: middle;
+    transform: translateY(-.1em);
+}
+
+.content {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    width: 90%;
+    max-width: 1920px;
+}
+
+ul,
+ol {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    color: #6A6A6A;
+}
+
+ul {
+    list-style: disc;
+}
+
+ul li,
+ol li {
+    margin-bottom: .5rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-12 {
+    font-size: 0.75rem;
+}
+
+.fs-20 {
+    font-size: 1.25rem;
+}
+
+.bg-gradient-blue {
+    background: linear-gradient(to bottom, rgb(255, 255, 255, 0) 0%, #DEF3FF 100%);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* login start */
+.page-title {
+    color: #003483;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.login-box {
+    border: 1px solid #eaeaea;
+    border-radius: .25rem;
+    width: 400px;
+    margin: 1rem;
+    background-color: #fff;
+}
+
+.login-tab {
+    border: none;
+}
+
+.login-box .nav-tabs .nav-link.active {
+    border-color: transparent;
+    color: #0D58C9;
+    background-color: #fff;
+}
+
+.login-box .nav-tabs .nav-link {
+    background-color: lightgray;
+    color: #6A6A6A;
+}
+
+/* login end */
+/* button start */
+.btn-normal {
+    padding: .75rem;
+    border-radius: .25rem;
+}
+
+.btn-sm {
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    font-size: small;
+}
+
+.btn-lg {
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+}
+
+.btn-w100 {
+    width: 100%;
+    padding: .5rem 1.5rem;
+    border-radius: .25rem;
+}
+
+.btn-cancel {
+    background-color: #ffffff;
+    color: #424242;
+    border: 1px solid lightgray;
+}
+
+.btn-cancel:hover {
+    background-color: lightgray;
+    color: #fff;
+    border: 1px solid lightgray;
+}
+
+.btn-blue {
+    background-color: #1651AA;
+    color: #fff;
+    border: 1px solid #1651AA;
+}
+
+.btn-blue:hover,
+.btn-blue-outlined:hover {
+    background-color: #0764ee;
+    color: #fff;
+    border: 1px solid #0764ee;
+}
+
+.btn-blue:active,
+.btn-blue-outlined:active {
+    background-color: #0f479a;
+    color: #fff;
+    border: 1px solid #0f479a;
+}
+
+.btn-blue-outlined {
+    background-color: #fff;
+    color: #0D58C9;
+    border: 1px solid lightgray
+}
+
+.btn-red {
+    background-color: #ac0101;
+    color: #fff;
+    border: 1px solid #ac0101;
+}
+
+.btn-red:hover,
+.btn-red-outlined:hover {
+    background-color: #cc0101;
+    color: #fff;
+    border: 1px solid #cc0101;
+}
+
+.btn-red:active,
+.btn-red-outlined:active {
+    background-color: #800808;
+    color: #fff;
+    border: 1px solid #800808;
+}
+
+.btn-red-outlined {
+    background-color: #fff;
+    color: #ac0101;
+    border: 1px solid lightgray
+}
+/* button end */
+/* component-delete-btn start */
+.btn-delete {
+    color: #C4C4C4;
+    position: absolute;
+    z-index: 3;
+}
+
+.btn-delete:hover {
+    color: red;
+}
+
+.dis-connect {
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+}
+/* component-delete-btn end */
+/* form-group start */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: .5rem;
+}
+.form-group label {
+    margin-bottom: .5rem;
+}
+/* form-group end */
+/* modal start */
+.modal-header {
+    padding: 1rem;
+}
+
+.modal-header-blue {
+    color: #fff;
+    background-color: #1651AA;
+}
+
+.modal-header-red {
+    color: #fff;
+    background-color: #A00000;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+/* modal end */
+.border-box {
+    border: 1px solid lightgray;
+    border-radius: .5rem;
+    background-color: #fff;
+}
+/* home-component start */
+.board-name{
+    font-size: 1.25rem; 
+    color:#003483; 
+    font-weight: bold;
+}
+.component-data {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #003483;
+    margin: 1rem 0;
+    width: max-content;
+}
+.component-box a {
+    color: #000;
+}
+
+.component-box a:hover,
+.component-box-add-all a:hover {
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+
+
+.component-box {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+}
+
+.component-box-add {
+    display: flex;
+}
+
+.component-box a {
+    color: #575757;
+    position: relative;
+    z-index: 1;
+}
+
+.component-box-add a {
+    color: #575757;
+}
+
+.component-box-l {
+    border: 1px solid lightgray;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.25rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-color: #fff;
+}
+
+.component-box-r {
+    border: 1px solid lightgray;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2.5rem 1rem 1rem 1rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-color: #fff;
+    border-left: none;
+}
+
+.component-box-add-all {
+    border: 1px dashed lightgray;
+    width: auto;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.25rem;
+    border-radius: .5rem;
+    background-color: #fff
+}
+
+.component-area a:hover .component-box-l,
+.component-area a:hover .component-box-r,
+.component-area a:hover .component-box-add-all {
+    box-shadow: 3px 3px 3px lightgray;
+}
+.component-box-add a{
+    height: 10rem;
+}
+/* home-component end */
+/* accordion摺疊選單 start */
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+}
+
+/* accordion摺疊選單 end */
